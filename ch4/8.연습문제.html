@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8.연습문제</title>
+       <!--
+        날짜 : 2024/07/24
+        이름 : 박서홍
+        내용 : CSS 속성 연습문제 실습하기
+    -->
+        <style>
+            article {
+                display: inline-block;
+            }
+
+            article > div {
+                width: 300px;
+                height: 300px;
+                border: 1px dashed black;
+            }
+
+
+            .box1 {
+                position: relative;
+            }
+            .box1 > div {
+               width: 200px;
+               height: 200px;
+               background-color: green;
+               margin-left: 100px;
+            }
+            .box2 {position: relative;}
+            .box2 > div {
+                width: 200px;
+               height: 200px;
+               background-color: green;  
+               position: absolute ;  
+               right: 0px;
+               bottom: 0px;
+            }
+                   
+            .box3 {position: relative;}
+            .box3 > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+               width: 200px;
+               height: 200px;
+               background: green;
+               
+            }
+            .box3 > div > div {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 100px;
+               height: 100px;
+               background: blue;
+              
+            }
+            .box4 {position: relative;}
+            .box4 > div {
+               width: 200px;
+               height: 200px;
+               background-color: green;
+               position: absolute;
+               left: 0px;
+               bottom: 0px;
+            }
+            .box4 > div > div {
+                width: 100px;
+               height: 100px;
+               background: blue;
+               position: absolute;
+               left: 0px;
+               bottom: 0px;
+            }
+            .box5 {position: relative;}
+            
+            .box5 > div {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin-left: 0 auto;
+            }
+
+            .box5 > div > div {
+            position: absolute;
+            left: 50%;
+            margin-left:-50px ;
+            top: 50%;
+            margin-top: -50px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+
+            }
+
+
+
+    
+
+
+
+         
+          
+
+            
+
+        
+        </style>
+</head>
+<body>
+<article>
+    <h4>문제1</h4>
+    <div class="box1">
+        <div></div>
+    </div>
+</article>
+<article>
+    <h4>문제2</h4>
+    <div class="box2">
+        <div></div>
+    </div>
+</article>
+<article>
+    <h4>문제3</h4>
+    <div class="box3">
+    <div>
+    <div></div>
+    </div>
+    </div>
+</article>
+<article>
+    <h4>문제4</h4>
+    <div class="box4">
+    <div>
+        <div></div>
+    </div>
+    </div>
+</article>
+<article>
+    <h4>문제5</h4>
+    <div class="box5">
+    <div>
+        <div></div>
+    </div>
+    </div>
+</article>
+<article>
+    <h4>문제6</h4>
+    <div class="box6">
+        <div></div>
+    </div>
+</article>
+<article>
+    <h4>문제7</h4>
+    <div class="box7">
+        <div></div>
+    </div>
+</article>
+<article>
+    <h4>문제8</h4>
+    <div class="box8">
+        <div></div>
+    </div>
+</article>
+<article>
+    <h4>문제9</h4>
+    <div class="box9">
+        <div></div>
+    </div>
+</article>
+<article>
+    <h4>문제10</h4>
+    <div class="box10">
+        <div></div>
+    </div>
+</article>
+  
+</body>
+</html>
