@@ -23,15 +23,48 @@
             height: 80px;
             border: 1px solid blue;
             box-sizing: border-box;
+            background: url(./images/header_bg.gif);
         }
 
         header  > div {
+            position: relative;
             width: 1000px;
             height: 100%;
             border: 1px solid green;
             box-sizing: border-box;
             margin: 0 auto;
         }
+        header .logo {margin-top: 6px;}
+
+
+        header .gnb {
+            float: right;
+            width: 620px;
+            height: 32px;
+            margin-top: 14px;
+            overflow: hidden;
+        }
+        header .gnb > li {
+            float: left;
+            width: 20%;
+            height: 100%;
+            box-sizing: border-box;
+            text-align: right;
+        }
+
+        header .gnb > li > a:hover {
+            color: #7b231f;
+        }
+
+        header .gnb > li >a {
+            text-align: right;
+            font-size: 17px;
+            line-height: 32px;
+            font-weight: bolder;
+        }
+
+
+
 
         main {
             width: 1000px;
@@ -106,7 +139,43 @@
 <body>
     <div id="wrapper">
         <header>
-            <div></div>
+            <div>
+                <a href="#">
+                    <img src="./images/header_logo.jpg" alt="로고" class="logo">
+                    </a>
+                    <ul class="gnb">
+                    <li>
+                        <a href="#">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="">매물정보</a>
+                    </li>
+                    <li> <a href="#">매도의뢰</a>
+                    </li>
+                    <li><a href="#">매입의뢰</a>
+                    </li>
+                    <li><a href="#">질문답변</a>
+                    </li>
+                     </ul>
+    
+                    <div class="latest">
+                        <a href="#"></a>
+                        <img src="./images/header_txt_latest.gif" alt="최신매물정보">
+                        <a href="#">  
+                            "[아파트] 삼성동 전체 (방:3/욕실2)/157㎡ / 매매가 21,100" </a>
+                    <main>
+                        <div>
+                            <div class="banner">
+                                <img src="./images/main_banner_bg.jpg" alt="전국 매물 보유량 최다! 계약 만족도 최상!">
+                            </div>
+                            <div class="call"></div>
+                            <img src="./images/main_call_tit.png" alt="상담문의 전화">
+                            <img src="./images/main_call_txt.png" alt="궁금하신 사항은 언제든지 전화주세요">
+                            <img src="./images/main_call_num.png" alt="02.123.4567">
+                            <img src="./images/main_call_phone.png" alt="전화">
+
+
+            </div>
         </header>
        <main>
         <div>
@@ -118,7 +187,63 @@
             <aside></aside>
             <article>
                 <h2>
-                    제목
+                    서울시 매물 정보
+                    <a href="#"><img src="./images/ico_more.png" alt="더보기"></a>
+                </h2>
+                <ul>
+                    <li>
+                        <img src="./images/thumbnail_sample1.jpg" alt="샘플이미지">
+                        <a href="#">[아파트] 강변 신축아파트 분양 (방:5/욕실2) 189㎡ / 매매가 20,800 분양가 20,800</a>
+                    </li>
+                    <li>
+                        <img src="./images/thumbnail_sample2.jpg" alt="샘플이미지">
+                        <a href="#">[아파트]  삼성동 전세 (방:3/욕실2) 157㎡/ 매매가 21,100</a>
+                    </li>
+                    <li>
+                        <img src="./images/thumbnail_sample3.jpg" alt="샘플이미지">
+                        <a href="#">[빌라] 안국동 매매 (방:8/욕실3) / 309㎡ / 매매가 11,800</a>
+                    </li>
+                    <li>
+                        <img src="./images/thumbnail_sample4.jpg" alt="샘플이미지">
+                        <a href="#">[복층빌라] 한남동 월세 (방:4/욕실2) 157㎡ / 보증금 3,000 월세80 </a>
+                    </li>
+                    <li>
+                        <img src="./images/thumbnail_sample5.jpg" alt="샘플이미지">
+                        <a href="#">[아파트] 역삼동 급매 (방:3/욕실2) 109㎡ /  매매가 11,800 </a>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h2>
+                    서울시 매물 정보
+                    <a href="#"><img src="./images/ico_more.png" alt="더보기"></a>
+                </h2>
+                <ul>
+                    <li>
+                        <img src="./images/thumbnail_sample1.jpg" alt="샘플이미지" class="thumb">
+                        <a href="#">[아파트] 강변 신축아파트 분양 (방:5/욕실2) 189㎡ / 매매가 20,800 분양가 20,800</a>
+                    </li>
+                    <li>
+                        <img src="./images/thumbnail_sample2.jpg" alt="샘플이미지" class="thumb">
+                        <a href="#">[아파트]  삼성동 전세 (방:3/욕실2) 157㎡/ 매매가 21,100</a>
+                    </li>
+                    <li>
+                        <img src="./images/thumbnail_sample3.jpg" alt="샘플이미지" class="thumb">
+                        <a href="#">[빌라] 안국동 매매 (방:8/욕실3) / 309㎡ / 매매가 11,800</a>
+                    </li>
+                    <li>
+                        <img src="./images/thumbnail_sample4.jpg" alt="샘플이미지" class="thumb">
+                        <a href="#">[복층빌라] 한남동 월세 (방:4/욕실2) 157㎡ / 보증금 3,000 월세80 </a>
+                    </li>
+                    <li>
+                        <img src="./images/thumbnail_sample5.jpg" alt="샘플이미지" class="thumb">
+                        <a href="#">[아파트] 역삼동 급매 (방:3/욕실2) 109㎡ /  매매가 11,800 </a>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h2>
+                    서울시 매물 정보
                     <a href="#"><img src="./images/ico_more.png" alt="more"></a>
                 </h2>
                 <ul>
@@ -126,10 +251,24 @@
                         <img src="./images/thumbnail_sample1.jpg" alt="샘플이미지">
                         <a href="#">[아파트] 강변 신축아파트 분양 (방:5/욕실2) 189㎡ / 매매가 20,800 분양가 20,800</a>
                     </li>
+                    <li>
+                        <img src="./images/thumbnail_sample2.jpg" alt="샘플이미지">
+                        <a href="#">[아파트]  삼성동 전세 (방:3/욕실2) 157㎡/ 매매가 21,100</a>
+                    </li>
+                    <li>
+                        <img src="./images/thumbnail_sample3.jpg" alt="샘플이미지">
+                        <a href="#">[빌라] 안국동 매매 (방:8/욕실3) / 309㎡ / 매매가 11,800</a>
+                    </li>
+                    <li>
+                        <img src="./images/thumbnail_sample4.jpg" alt="샘플이미지">
+                        <a href="#">[복층빌라] 한남동 월세 (방:4/욕실2) 157㎡ / 보증금 3,000 월세80 </a>
+                    </li>
+                    <li>
+                        <img src="./images/thumbnail_sample5.jpg" alt="샘플이미지">
+                        <a href="#">[아파트] 역삼동 급매 (방:3/욕실2) 109㎡ /  매매가 11,800 </a>
+                    </li>
                 </ul>
             </article>
-            <article></article>
-            <article></article>
         </section>
        </main>
        <footer></footer>
