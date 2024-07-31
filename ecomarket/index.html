@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>친환경장터::main</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font: normal 12px 'noto sans korean';
+        }
+
+        ul, ol {list-style: none;}
+        a{text-decoration: none; color: #111;}
+
+        #wrapper {
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+            width: 100%;
+            height: auto;
+        }
+        
+        header > div {
+            width: 100%;
+        }
+
+        header > div:nth-child(1) {height: 44px; background: #f3f3f3;}
+        header > div:nth-child(2) {height: 110px;}
+        header > div:nth-child(3) {height: 46px; background: #564f47;}
+        header > div * {
+            width: 1126px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        header .top {
+            float: right;
+            margin-top: 6px;
+        }
+
+        header .ico {
+            display: inline-block;
+            width: 17px;
+            height: 17px;
+            margin-right: 30px;
+            background-image: url(./images/sprites.png);
+
+        }
+        header .ico.user {
+            position: relative;
+            top: 2px;
+            left: 1000px;
+            width: 17px;
+            height: 17px;
+            background-position:0 -504px;  
+            
+        }
+
+        header .ico.cart { width: 17px; height: 17px; 
+            background-position: 0 -487px; float: right;}
+        header .ico.wish { width: 20px; height: 18px; 
+            background-position: 0 -539px; float: right;}
+           
+            header .ico .label {
+            position: relative;
+            right: -22px;
+            top: 2px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: #ff6e53;
+            border-radius: 50%;
+            text-align: center;
+            color: white;
+            font-size: 11px;
+        }
+
+
+
+        header > div > div {
+            width: 1126px;
+            height: 100%;
+            margin: 0 auto;
+
+        }
+        header div > section {
+            width: 1126px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        header div > nav {
+            width: 1126px;
+            height: 100%;
+            
+        } 
+
+       
+        header section > .logo {
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+        }
+     
+
+
+
+
+        header section {
+            position: relative;
+        } 
+        header section > .logo {
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+        }
+
+        header section > .banner {
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+        }
+        header .gnb {
+            width: 100%;
+            height: 100%;
+        }
+        header .gnb > li {
+            float: left;
+            width: 16.66%;
+            height: 100%;
+        }
+
+        header .gnb > li > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 46px;
+            font-family: arial;
+            font-size: 15px;
+            font-weight: bold;
+            color: #b0a171;
+            background-color: #464545;
+        }
+        header .gnb > li > a:hover {
+            background-color: #396340;
+            color: #fff;
+            font-size: 16px;
+        }
+
+
+
+
+        main {
+            width: 100%;
+            height: auto;
+        }
+
+        main > section {
+            width: 100%;
+            height: auto;
+            padding: 40px 0;
+            box-sizing: border-box;
+        }
+
+        main > section:nth-child(1) { height: 480px;}
+        main > section:nth-child(2) { height: 564px;}
+        main > section:nth-child(3) { height: 620px;}
+        main > section:nth-child(4) { height: 220px;}
+        main > section:nth-child(5) { height: 884px;}
+        main > section:nth-child(6) { height: 220px;}
+        main > section:nth-child(7) { height: 884px;}
+
+        main > section > article {
+            width: 1126px;
+            height: 100%;
+            margin: 0 auto;
+            
+        }
+        main > .new > article > div {
+            float: left;
+            width: 345px;
+           
+            box-sizing: border-box;
+
+        }
+
+
+
+        main > .banner {}
+        main > .banner > article {
+            position: relative;
+        }
+        main > .banner > article > img {
+            position: absolute;
+        }
+        main > .banner > article > img:nth-child(1) {left: 10px; top: 40px;}
+        main > .banner > article > img:nth-child(2) {left: 460px; top: 40px;}
+        main > .banner > article > img:nth-child(3) {right: 10px; bottom: 100px;}
+
+
+
+        main > .new >  article >div:nth-child(1){width: 434px; height: 100%;}
+        main > .new >  article >div:nth-child(2){height: 50%;}
+        main > .new >  article >div:nth-child(3){height: 50%;}
+        main > .new >  article >div:nth-child(4){height: 50%;}
+        main > .new >  article >div:nth-child(5){height: 50%;}
+
+        main > .master > article >div {
+            width: 25%;
+            height: 334px;
+            box-sizing: border-box;
+            
+            float: left;
+        }
+
+        main .gallary {
+            overflow: hidden;
+        }
+
+        main .gallary > div {
+            float: left;
+            width: 25%;
+            height: 400px;
+           
+            box-sizing: border-box;
+
+        }
+
+        footer {
+            width: 100%;
+            height: auto;
+           
+            box-sizing: border-box;
+
+        }
+
+        footer > div {
+            width: 1126px;
+            height: 210px;
+            
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+
+
+            
+
+                  
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+    <header>
+        <div>
+            <div>
+                <p class="top">
+                    <a href="#"><i class="ico user"></i></a>
+                    <a href="#"><i class="ico cart"><span class="label">0</span></i></a>
+                    <a href="#"><i class="ico wish"><span class="label">0</span></i></a>                    
+                </p>
+            </div>
+        </div>
+        <div>
+            <section>
+                <a href="#" class="logo">
+                    <img src="./images/header_logo.png" alt="로고"></a>
+                <a href="#" class="banner">
+                    <img src="./images/header_banner.png" alt=""></a>
+            </section>
+        </div>
+        <div>
+            <nav>
+                <ul class="gnb">
+                    <li> <a href="#">친환경장터 소개</a></li>
+                    <li> <a href="">과일</a></li>
+                    <li> <a href="">채소</a></li>
+                    <li> <a href="">쌀.잡곡</a></li>
+                    <li> <a href="">반찬</a></li>
+                    <li> <a href="">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <article>
+                <img src="./images/main_banner_img.jpg" alt="채소">
+                <img src="./images/main_banner_tit.jpg" alt="친환경 우리집 식탁">
+                <img src="./images/main_banner_txt.png" alt="깐깐하게 고른 유기농 쌈채소">
+
+            </article>
+             </section>
+             <section class="new">
+                <h3>장터 <strong>새상품</strong></h3>
+                <article>
+                <div>
+                    <img src="./images/main_new_badge.png" alt="NEW">
+                <span class="txt">우리농가에서 자란</span>
+                <span class="tit">껍질째 먹는<strong>포도</strong></span>
+                <span class="price">8,900</span>
+               </div>
+
+                <div>
+                    <img src="./images/main_new_img2.jpg" alt="올리브 오일">
+                    <span class="txt">맛과 향이 다른<br>정성가득 갓 짜낸</span>
+                    <span class="tit">올리브 오일</span>
+                    <span class="price">18,900</span>
+                    </div>
+
+                <div>
+                    <img src="./images/main_new_img3.png" alt="청경채">
+                    <span class="txt">시력보호. 혈액순환. 피부미용</span>
+                    <span class="tit">청경채</span>
+                    <span class="price">10,000</span>
+                    </div>
+                <div>
+                    <img src="./images/main_new_img4.jpg" alt="천연벌꿀">
+                    <span class="txt">강원도의 맑은<br>자연환경에서 생산한</span>
+                    <span class="tit">천연벌꿀</span>
+                    <span class="price">21,000</span>
+                    </div>
+                <div>
+                    <img src="./images/main_new_img5.jpg" alt="느타리버섯">
+                    <span class="txt">무농약 인증<br>버섯의 진한 향과 쫄깃한 식감</span>
+                    <span class="tit">느타리버섯</span>
+                    <span class="price">9,000</span>
+                </div>
+            </article>
+             </section>
+             <section class="master">
+                <h3>전국최고<strong>장터명인</strong></h3>
+                <article>
+                    <div>
+                        <img src="./images/main_master_pic1.jpg" alt="master1">
+                        <p>
+                            강원도 농작물 명인<br>
+                            내용을 입력 내용을 입력하세요.
+                            <span class="name">김ㅇㅇ님</span>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./images/main_master_pic2.jpg" alt="master1">
+                        <p>
+                            강원도 농작물 명인<br>
+                            내용을 입력 내용을 입력하세요.
+                            <span class="name">김ㅇㅇ님</span>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./images/main_master_pic3.jpg" alt="master1">
+                        <p>
+                            강원도 농작물 명인<br>
+                            내용을 입력 내용을 입력하세요.
+                            <span class="name">김ㅇㅇ님</span>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./images/main_master_pic4.jpg" alt="master1">
+                        <p>
+                            강원도 농작물 명인<br>
+                            내용을 입력 내용을 입력하세요.
+                            <span class="name">김ㅇㅇ님</span>
+                        </p>
+                    </div>
+                </article>
+             </section>
+             <section class="organic_banner">
+                <img src="./images/main_organic_bg_txt.png" alt="자연 그대로의 신선함 싱싱하고 다양한 유기농 쌈채소">
+             </section>
+             <section class="organic">
+                <h3>장터<strong>유기농 쌈채소</strong></h3>
+                <article class="gallary">
+                <div>
+                    <img src="./images/main_organic_thum1.jpg" alt="쌈채소1">
+                    <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                    <span class="txt">직접 농사짓는 농산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_organic_thum2.jpg" alt="쌈채소1">
+                    <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                    <span class="txt">직접 농사짓는 농산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_organic_thum3.jpg" alt="쌈채소1">
+                    <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                    <span class="txt">직접 농사짓는 농산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_organic_thum4.jpg" alt="쌈채소1">
+                    <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                    <span class="txt">직접 농사짓는 농산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_organic_thum5.jpg" alt="쌈채소1">
+                    <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                    <span class="txt">직접 농사짓는 농산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_organic_thum6.jpg" alt="쌈채소1">
+                    <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                    <span class="txt">직접 농사짓는 농산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_organic_thum7.jpg" alt="쌈채소1">
+                    <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                    <span class="txt">직접 농사짓는 농산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_organic_thum8.jpg" alt="쌈채소1">
+                    <span class="tit">건강한 자연의 맛과 영양 쌈</span>
+                    <span class="txt">직접 농사짓는 농산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+            </article>
+             </section>
+             <section class="grain_banner">
+                <img src="./images/main_grain_bg_txt.png" alt="풍부한 영양이 살아있는 건강잡곡">
+             </section>
+             <section class="grain">
+                <h3>장터<strong>쌀.잡곡</strong></h3>
+                <article class="gallary">
+                <div>
+                    <img src="./images/main_grain_thum1.jpg" alt="잡곡1">
+                    <span class="tit">국내산 100% 잡곡</span>
+                    <span class="txt">직접 농사짓는 농수산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_grain_thum2.jpg" alt="잡곡1">
+                    <span class="tit">국내산 100% 잡곡</span>
+                    <span class="txt">직접 농사짓는 농수산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_grain_thum3.jpg" alt="잡곡1">
+                    <span class="tit">국내산 100% 잡곡</span>
+                    <span class="txt">직접 농사짓는 농수산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_grain_thum4.jpg" alt="잡곡1">
+                    <span class="tit">국내산 100% 잡곡</span>
+                    <span class="txt">직접 농사짓는 농수산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_grain_thum5.jpg" alt="잡곡1">
+                    <span class="tit">국내산 100% 잡곡</span>
+                    <span class="txt">직접 농사짓는 농수산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_grain_thum6.jpg" alt="잡곡1">
+                    <span class="tit">국내산 100% 잡곡</span>
+                    <span class="txt">직접 농사짓는 농수산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_grain_thum7.jpg" alt="잡곡1">
+                    <span class="tit">국내산 100% 잡곡</span>
+                    <span class="txt">직접 농사짓는 농수산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+                <div>
+                    <img src="./images/main_grain_thum8.jpg" alt="잡곡1">
+                    <span class="tit">국내산 100% 잡곡</span>
+                    <span class="txt">직접 농사짓는 농수산물 세계3대 장수식품</span>
+                    <span class="price">20,000</span>
+                </div>
+            </article>
+             </section>
+    </main>
+    <footer>
+        <div>
+            <img src="./images/footer_logo.png" alt="logo">
+            <p>
+                상호명 : 친환경 농수산 전문몰/ 대표 : 홍길동 / 메일 : master@eco-market.com<br>
+                통신판매업신고번호 : 123-1234-5678 / 사업자등록번호 : 123-45-6789 / 대표번호 : 070-1234-1234 <br>
+                팩스번호 : 02-123-4567 개인정보관리자 : 홍길동 주소 : 부산광역시 남구 대연동 123
+            </p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
