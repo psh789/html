@@ -23,11 +23,11 @@ nav a {
     color: #27ae60;
 }
 /*7. 첫 번째 `article` 클래스를 가진 `div 요소를 선택하세요.`*/
-.artivle > div:first-child {
+.article > div:first-child {
     background-color: #bdc3c7;
 }
 /*8. 두 번째 `article` 클래스를 가진 `div` 요소를 선택하세요.*/
-.artivle > div:nth-child(2) {
+.article > div:nth-child(2) {
     background-color: #fad7a0;
 }
 /* 9. `article` 클래스를 가진 `div`요소 내의 `p` 요소를 선택하세요. */
