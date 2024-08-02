@@ -8,7 +8,7 @@
      *{
             margin: 0;
             padding: 0;
-            font: normal 12px "Inter", sans-serif;
+            font-family:  12px "Inter", sans-serif;
         }
 
         ul, ol {list-style: none;}
@@ -55,39 +55,51 @@
         header .logout > span {
            font-weight: 400;
             font-size: 12px;
-            line-height: 14.52px;
+            line-height: 14.52px; 
+        }
+
+        main > section {
+            width: 800px;
+            height: 180px;
             
         }
 
 
 
-
-
-
-table{
-
+table {
 width: 800px;
 height: 84px;
 top: 51px;
-padding: 1px 0px 0.5px 0px;
+border-collapse:collapse;
+}
+
+
+footer > .copyright {
+width: 182.87px;
+height: 14px;
+top: 1px;
 gap: 0px;
-border: 2px 0px 0px 0px;
 opacity: 0px;
 
+}
 
-  
-  
-
+footer > div > p {
+    width: 30.2px;
+    height: 14px;
+    left: 760px
 
 }
-    
 
 
 
 
 </style>
-
 </head>
+
+
+
+
+
 <body>
     <div id="wrapper">
         <header>
@@ -96,55 +108,56 @@ opacity: 0px;
                 <span>[로그아웃]</span>
             </div>
         </header>
+
         <main>
             <section>
-            <div>
                 <nav>
                     <a href="#">글목록</a>
                     <form action="">
-                        
-                        <p>
-                           
-                            <input type="text" value="제목 키워드, 글쓴이 검색">
-                        </p>
                         <input type="submit" value="검색">
-                        <table border="1">
-                            <tr>
-                                <th>번호</th>
-                                <th>제목</th>
-                                <th>글쓴이</th>
-                                <th>날짜</th>
-                                <th>조회</th>
-                            </tr>
-                            <tr>
-                                <th>1</th>
-                                <th>테스트 제목입니다.[3]</th>
-                                <th>길동이</th>
-                                <th>20-05-12</th>
-                                <th>12</th>
-                            </tr>
-                            
-                        </table>
-                        <input type="button" value="이전">
-                        <input type="button" value="1">
-                        <input type="button" value="2">
-                        <input type="button" value="3">
-                        <input type="button" value="다음">
-                        
-                        <input type="button" value="글쓰기">
-                    </form>
-                  
+                    
+                    </form>  
                 </nav>
-            </div>
+                <p>
+                    <input type="text" value="제목 키워드, 글쓴이 검색">
+                </p>
+
+                <input type="button" value="이전">
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="다음">
+                <input type="button" value="글쓰기">
+
+                
+                <table border="1">
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>날짜</th>
+                        <th>조회</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>테스트 제목입니다.[3]</th>
+                        <th>길동이</th>
+                        <th>20-05-12</th>
+                        <th>12</th>
+                    </tr>
+                    
+                </table>
         </section>
         </main>
-
     </div>
     <footer>
         <div class="copyright">
-            Copyright© 김철학(개발에반하다.)<br>
-            v1.0.1
+            Copyright© 김철학(개발에반하다.)
+            <p>v1.0.1</p>
         </div>
+      
+          
+      
     </footer>
 </body>
 </html>
